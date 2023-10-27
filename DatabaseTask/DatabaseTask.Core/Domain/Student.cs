@@ -6,17 +6,14 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace DatabaseTask.Core.Domain
 {
-    public class Employee
+    public class Student
     {
         [Key]
-        public Guid EmployeeID { get; set; }
-        public string Name { get; set; }
+        public Guid StudentID { get; set; }
+        public string FirstName { get; set; }
         public string Gender { get; set; }
-        public string Role { get; set; }
 
-        public IEnumerable<Class> classes { get; set; } = new List<Class>();
     }
 }
